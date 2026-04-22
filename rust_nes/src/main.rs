@@ -1,8 +1,8 @@
 mod cartridge;
 
-use crate::cartridge::load_nes_file;
+use crate::cartridge::rom::Cartridge;
 
 fn main() {
-    let filepath = "/Users/david/Desktop/code/chip8/src/programs/15puzzle.rom";
-    load_nes_file(filepath);
+    let filepath = "/Users/david/Desktop/code/rustnes/rust_nes/src/roms/nestest.nes";
+    let cartridge = Cartridge::new(filepath);
 }
